@@ -225,7 +225,7 @@ def most_points_scored
           stats.each {|data, int|
             if data == :points && int > total
               
-              name = points[location][attribute]
+              name = points[location][attribute][player].key
               total = int
               
             end
